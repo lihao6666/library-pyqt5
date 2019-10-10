@@ -1,0 +1,143 @@
+*{margin: 0;padding: 0;list-style: none;}
+body{
+	background: url('bg.jpg') center bottom;
+    background-size: 100%; 
+}
+.container{
+    
+	width: 1200px;
+	height: 950px;
+	margin: 0 auto;
+/* 	background: #ccc; */
+}
+/* 导航 */
+/*.nav{
+	margin-top: 10px;
+	height: 50px;
+	line-height: 50px;
+}
+.nav ul li{
+	float: right;
+	font-size: 15px;
+}
+.nav ul li a{
+	text-decoration: none;
+	color: #152b3c;
+	padding:15px 30px;
+}
+.nav ul li a:hover{
+	border: 1px solid white;
+	border-radius:5%;
+	color: white;
+} 
+/* 主题内容 */
+.main{
+	width:1200px;
+	height: 450px;
+}
+.sideright{
+	width: 480px;
+	height: 450px;
+	float: right;
+}
+.sideright .index{
+	width: 330px;
+	height: 380px;
+	background-color:rgba(255,255,255,0.75);
+
+	margin: 50px 90px;
+}
+.headline{
+	font-size: 22px;
+	text-align: center;
+	padding: 20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"]{
+	-web-kit-appearance:none;
+	/* background-color:white;  */
+  	-moz-appearance: none;
+  	display: block;
+  	margin: 0 auto;
+    font-size:15px;
+    height: 37px;
+  	width: 240px;
+}
+
+input[type="text"]{
+	background: url("yhm.png") no-repeat 200px,5px;
+	background-color:white; 
+	height:35px;
+	border-radius:3px;
+	border:1px solid rgb(67, 146, 206);
+	color:#173157;
+	outline:0;
+}
+input[type="password"]{
+	background: url("mm.png") no-repeat 200px,5px;
+	background-color:white; 
+	height:35px;
+	border-radius:3px;
+	border:1px solid rgb(67, 146, 206);
+	color:#173157;
+	outline:0;
+}
+input[type="submit"]{
+	margin-top: 25px;
+	height: 35px;
+	background: #357eb8;
+	color: #bcedff;
+	font-weight: bold;
+	font-size: 16px;
+}
+/* input[type="submit"]:hover{
+	background: #0e62a3;
+	cursor: pointer;
+} */
+.astyle{
+	margin: 5px 0 5px 42px;
+	font-size:17px; 
+	color: #6a6f77;
+}
+.bstyle{
+	display: block;
+	float: left;
+	margin-left: 46px;
+    font-size: 15px;
+}
+.bstyle #man{
+    margin-left: 120px;
+}
+.cstyle{
+	display: block;
+	float: right;
+	margin-right: 46px;
+	font-size: 15px;
+}
+.cstyle a{
+	text-decoration: none;
+}
+.buttom{
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;  
+}
+.buttom ul{
+    width: 800px;
+    text-align: center;
+    margin: 0px auto;  
+    margin-bottom:450px; 
+}
+.buttom ul li{
+	float: left;
+ 
+}
+.buttom ul li a{
+	text-decoration: none;
+	color: rgb(91, 46, 216);
+	border-left: 2px solid rgb(75, 50, 185);
+	padding:0 10px;
+}
+ 
+  
