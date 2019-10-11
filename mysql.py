@@ -6,7 +6,7 @@ class mydb():
     login_id=""
     lib_id=""
     def db_connect(self):
-        db = pymysql.connect(host='111.230.138.45',user='lh', password='lh19990507', port=3306,db='library')
+        db = pymysql.connect(host='127.0.0.1',user='lh', password='lh19990507', port=3306,db='library')
         return db
     def login(self,id,passwd,previ):
         db = self.db_connect()
