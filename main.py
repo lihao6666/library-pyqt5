@@ -1,9 +1,7 @@
 import sys
-from PyQt5.QtWidgets import QApplication,QMainWindow,QWidget,QMessageBox,QHBoxLayout,QFrame
+from PyQt5.QtWidgets import QApplication,QMainWindow,QWidget,QMessageBox,QHBoxLayout
 from PyQt5.QtCore import QTimer
-from PyQt5.QtCore import QRect
 from PyQt5 import QtWidgets
-from PyQt5.QtCore import QThread
 from start import Ui_start
 from login import Ui_MainWindow
 from menu2 import Ui_Dialog2
@@ -16,11 +14,8 @@ from info import Ui_Dialog7
 from add_reader import Ui_Dialog8
 from borrow_record import Ui_Dialog9
 from mysql import mydb
-from datetime import datetime
-from PyQt5 import sip
 from pie import BingTu
 from PyQt5.QtCore import QUrl
-from PyQt5.QtWebEngineWidgets import QWebEngineView
 
 db = mydb()
 db.lib_id = "123123"
@@ -444,9 +439,6 @@ class Borrow2_Info(Borrow_Info):
                 self.tableWidget.setCellWidget(i, 5, self.getbutton(i))
 
     def add_borrow(self, id):
-        time = format(self.info[id][4])
-        data = db.add_time(self.info[id][0])
-        button = QMessageBox.about(self, "成功", "继续")
         self.close()
         self.borrow_info = Borrow2_Info()
         self.borrow_info.show_info(db.borrow_info(db.lib_id))
